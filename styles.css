@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.stopwatch {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.display {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.btn {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn.start {
+    background: linear-gradient(135deg, #00b09b, #96c93d);
+}
+
+.btn.reset {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.btn.lap {
+    background: linear-gradient(135deg, #4a00e0, #8e2de2);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.laps {
+    margin-top: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.laps h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.laps ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.laps li {
+    padding: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.laps li:last-child {
+    border-bottom: none;
+}
+
+/* Scrollbar Styling */
+.laps::-webkit-scrollbar {
+    width: 8px;
+}
+
+.laps::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.laps::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.laps::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
